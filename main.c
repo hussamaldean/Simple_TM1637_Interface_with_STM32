@@ -26,8 +26,6 @@ tm1637DisplayDecimal(current,tog);
 	
 if(millis()-previous>1000){tog=!tog; previous=millis();}
 	
-//_tm1637ClkHigh();
-//_tm1637ClkLow();
 	
 }
 
