@@ -1,0 +1,12 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\sysclockconfig.o"
+".\objects\encoder.o"
+".\objects\tm1637.o"
+".\objects\startup_stm32f411xe.o"
+".\objects\system_stm32f4xx.o"
+--strict --scatter ".\Objects\tm1637.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\tm1637.map" -o .\Objects\tm1637.axf
