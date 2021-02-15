@@ -2,8 +2,6 @@
 #include "SysClockConfig.h"
 #include "TM1637.h"
 #include "stdio.h"
-extern void _tm1637ClkHigh();
-extern void _tm1637ClkLow();
 uint32_t current,previous;
 #define rate 1000
 int tog=1;
