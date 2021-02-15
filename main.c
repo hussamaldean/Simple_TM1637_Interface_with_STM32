@@ -1,7 +1,7 @@
 #include "encoder.h"
 #include "SysClockConfig.h"
 #include "TM1637.h"
-#include "stdio.h"
+
 uint32_t current,previous;
 #define rate 1000
 int tog=1;
@@ -23,7 +23,7 @@ current=get_encoder_value();
 tm1637DisplayDecimal(current,tog);
 	
 if(millis()-previous>1000){tog=!tog; previous=millis();}
-	
+
 	
 }
 
